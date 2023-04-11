@@ -1,0 +1,6 @@
+    // having es practicamente lo mismo que where.sOLO QUE SIRVE MAS PARA SENTENCIAS COMPLEJAS
+        ELECT height_cm AS altura FROM friends_of_pickles GROUP BY altura 
+        HAVING altura <100 ORDER BY altura DESC ;
+
+        //GENERALMENTE SE PONE HAVING DESPUES DE UN GROUP BY
+     

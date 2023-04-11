@@ -1,0 +1,14 @@
+----- creacion de una tabla -------------------------
+CREATE TABLE `platzi_test`.`people` (
+  `person_id` INT NOT NULL AUTO_INCREMENT,
+  `first_name` VARCHAR(255) NULL,
+  `last_name` VARCHAR(255) NULL,
+  `address` VARCHAR(255) NULL,
+  `city` VARCHAR(255) NULL,
+  PRIMARY KEY (`person_id`));
+--------adicion de un campo o columna ---------------
+ALTER TABLE `platzi_test`.`people` 
+ADD COLUMN `birth` VARCHAR(255) NULL AFTER `city`;
+--------eliminacion de un campo --------------------
+ALTER TABLE `platzi_test`.`people` 
+DROP COLUMN `birth`;

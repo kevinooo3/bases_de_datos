@@ -1,0 +1,21 @@
+------- comando de insercion datos a la tabla -------------
+INSERT INTO people(last_name,first_name,address,city)
+VALUES 
+('Vásquez','Israel',"Reforma 222",'Mexico'),
+('Alanís','Edgar',"Avenida siempreviva",'Morelia'),
+('Hernandez','Mónica',"Pensilvania 1600",'Aguascalientes'),
+('Hernandez','Laura',"Calle 21",'Monterrey');
+
+--- comandos de actualizacion de datos --------
+
+UPDATE people
+SET last_name = 'Chavez', city='Mérida'
+WHERE person_id=1;
+
+UPDATE people
+SET first_name = 'Juan'
+WHERE city='Mérida';
+
+--- eliminar un registro---
+DELETE FROM people 
+WHERE person_id=4;

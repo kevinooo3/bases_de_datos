@@ -1,0 +1,12 @@
+//Los join mas que todo sirven para seleccionar dos tablas que estan relacionadas por llaves primarias.
+    LEFT JOIN : select tabla1.columnax as otroalias , tabla2.columnax2 as unalias from  tabla1 LEFT JOIN tabla2 ON tabla1.columnaConLlavePrimaria = tabla2.columnaConLlaveForanea;
+    // left join trae la consulta con la tabla que pongamos despues de from como tabla al lado izquierdo
+    RIGTH JOIN : select tabla1.columnax as otroalias , tabla2.columnax2 as unalias from  tabla1 RIGHT JOIN tabla2 ON tabla1.columnaConLlavePrimaria = tabla2.columnaConLlaveForanea;
+    // rigth join trae la consulta con la tabla que pongamos despues de "RIGTH JOIN" como tabla al lado izquierdo 
+    INNER JOIN : select tabla1.columnax as otroalias , tabla2.columnax2 as unalias from  tabla1 INNER JOIN tabla2 ON tabla1.columnaConLlavePrimaria = tabla2.columnaConLlaveForanea;
+    // INNER join trae la consulta PERO CON REGISTROS DE LAS LLAVES PRIMARIAS COMO FORANEAS QUE NO SEASN NULAS O VACIAS
+
+
+    ---TABMIEN PODEMOS AÑADIR EL WHERE A LOS JOINS 
+    EJM:INNER JOIN : select tabla1.columnax as otroalias , tabla2.columnax2 as unalias from  tabla1 INNER JOIN tabla2 ON tabla1.columnaConLlavePrimaria = tabla2.columnaConLlaveForanea
+    WHERE tabla1.columna1 = "VALOR";

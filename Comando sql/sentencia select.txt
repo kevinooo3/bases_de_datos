@@ -1,0 +1,5 @@
+SELECT * FROM GANPI; //selecciona todos los registros de la tabla ganpi
+SELECT * FROM platzi_test.people where first_name = 'diablo'; // seleccion con condiciones
+SELECT first_name, last_name, address, city FROM people; // seleccionamos solamente algunos atributos 
+SELECT first_name as "primer nombre", last_name as "apellidos", address as direccion, city as ciudad FROM people; // seleccionamos con alias que apareceran como nombre de las columnas
+SELECT COUNT(*) FROM GANPI ; // muestra la cantidad de registros o filas de la tabla

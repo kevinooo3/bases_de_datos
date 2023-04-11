@@ -1,0 +1,1 @@
+SELECT gender as genero, COUNT(*) AS cantidachi FROM friends_of_pickles GROUP BY gender;
